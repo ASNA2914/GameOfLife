@@ -1,7 +1,7 @@
 ----Colors-----
-Dead = (20,20,20)
-Alive = (140,140,140)
+Dead = (0,0,0)
+Alive = (255,255,255)
 ----Window-----
-Resolution = 50
-Size = 10
+Resolution = 16
+Size = 32
 Grid = true
