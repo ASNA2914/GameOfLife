@@ -1,4 +1,4 @@
-# MyPython
+# Game of life
 ----Controls----
 SPACE - Pause
 F - Erase All
