@@ -5,5 +5,3 @@ Alive = (140,140,140)
 Resolution = 50
 Size = 10
 Grid = true
-----Controls----
-SPACE D E F G N F2 F3 F4
