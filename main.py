@@ -76,6 +76,10 @@ run = True
 
 while run:
     m_pos_x, m_pos_y = pygame.mouse.get_pos()
+    if pygame.mouse.get_pressed()[0]:
+        g[int(m_pos_x/resolution)][int(m_pos_y/resolution)] = 1
+    if pygame.mouse.get_pressed()[2]:
+        g[int(m_pos_x/resolution)][int(m_pos_y/resolution)] = 0
     for e in pygame.event.get():
         if e.type == pygame.QUIT:
             pygame.quit()
@@ -87,10 +91,6 @@ while run:
                     pause = True
                 else:
                     pause = False
-            if e.key == pygame.K_d:
-                g[int(m_pos_x/resolution)][int(m_pos_y/resolution)] = 1
-            if e.key == pygame.K_e:
-                g[int(m_pos_x/resolution)][int(m_pos_y/resolution)] = 0
             if e.key == pygame.K_g:
                 g = createGrid(True)
             if e.key == pygame.K_f:
@@ -115,4 +115,5 @@ while run:
             if e.key == pygame.K_F4:
                 g = Load(g)
     draw()
-    clock.tick(30)
+    clock.tick(60)
+    pygame.display.set_caption(str(int(clock.get_fps())))
