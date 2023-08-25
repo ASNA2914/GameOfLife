@@ -1,0 +1,9 @@
+----Colors-----
+Dead = (20,20,20)
+Alive = (140,140,140)
+----Window-----
+Resolution = 50
+Size = 10
+Grid = true
+----Controls----
+SPACE D E F G N F2 F3 F4
